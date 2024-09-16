@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Name - Profile</title>
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+        line-height: 1.5;
+        color: #333;
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background-color: #f3f4f6;
+      }
+      .container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1rem;
+      }
+      header {
+        background-color: #fff;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+        padding: 1rem 0;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      nav a {
+        color: #333;
+        text-decoration: none;
+        margin-left: 1rem;
+      }
+      h1,
+      h2,
+      h3 {
+        margin-bottom: 0.5rem;
+      }
+      .section {
+        padding: 4rem 0;
+      }
+      .section-title {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+      }
+      .btn {
+        display: inline-block;
+        background-color: #3b82f6;
+        color: #fff;
+        padding: 0.5rem 1rem;
+        border-radius: 0.25rem;
+        text-decoration: none;
+        margin-right: 1rem;
+      }
+      .btn-outline {
+        background-color: transparent;
+        border: 1px solid #3b82f6;
+        color: #3b82f6;
+      }
+      .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 1rem;
+      }
+      .skill-card {
+        background-color: #fff;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        text-align: center;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+      }
+      .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+      }
+      .project-card {
+        background-color: #fff;
+        border-radius: 0.5rem;
+        overflow: hidden;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+      }
+      .project-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+      .project-card-content {
+        padding: 1rem;
+      }
+      .contact-links {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+      }
+      .contact-link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #e5e7eb;
+        color: #4b5563;
+        text-decoration: none;
+      }
+      footer {
+        background-color: #fff;
+        padding: 1rem 0;
+        text-align: center;
+        margin-top: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <span style="font-size: 1.5rem; font-weight: bold">Shubham Bajpai</span>
+        <div>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="about" class="section">
+        <div class="container">
+          <h1 style="font-size: 3rem; text-align: center">
+            Hello, I'm Shubham Bajpai
+          </h1>
+          <p style="text-align: center; max-width: 600px; margin: 1rem auto">
+            A passionate a data engineer who designs and builds the pipelines
+            that turn raw data into valuable insights..
+          </p>
+          <div style="text-align: center; margin-top: 2rem">
+            <a href="#" class="btn">Download CV</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section" style="background-color: #fff">
+        <div class="container">
+          <h2 class="section-title">Skills</h2>
+          <div class="skills-grid">
+            <div class="skill-card">Python</div>
+            <div class="skill-card">Php</div>
+            <div class="skill-card">AWS</div>
+            <div class="skill-card">Spark</div>
+            <div class="skill-card">SQL</div>
+            <div class="skill-card">Git</div>
+            <div class="skill-card">AWS</div>
+            <div class="skill-card">Docker</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="container">
+          <h2 class="section-title">Projects</h2>
+          <div class="projects-grid">
+            <div class="project-card">
+              <img src="https://via.placeholder.com/400x200" alt="Project 1" />
+              <div class="project-card-content">
+                <h3>Project 1</h3>
+                <p>A brief description of your project and its key features.</p>
+                <a
+                  href="#"
+                  class="btn btn-outline"
+                  style="display: block; text-align: center; margin-top: 1rem"
+                  >View Project</a
+                >
+              </div>
+            </div>
+            <div class="project-card">
+              <img src="https://via.placeholder.com/400x200" alt="Project 2" />
+              <div class="project-card-content">
+                <h3>Project 2</h3>
+                <p>A brief description of your project and its key features.</p>
+                <a
+                  href="#"
+                  class="btn btn-outline"
+                  style="display: block; text-align: center; margin-top: 1rem"
+                  >View Project</a
+                >
+              </div>
+            </div>
+            <div class="project-card">
+              <img src="https://via.placeholder.com/400x200" alt="Project 3" />
+              <div class="project-card-content">
+                <h3>Project 3</h3>
+                <p>A brief description of your project and its key features.</p>
+                <a
+                  href="#"
+                  class="btn btn-outline"
+                  style="display: block; text-align: center; margin-top: 1rem"
+                  >View Project</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section" style="background-color: #fff">
+        <div class="container">
+          <h2 class="section-title">Get in Touch</h2>
+          <div class="contact-links">
+            <a
+              href="mailto:your.email@example.com"
+              class="contact-link"
+              aria-label="Email"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                ></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </a>
+            <a
+              href="https://github.com/yourusername"
+              class="contact-link"
+              aria-label="GitHub"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                ></path>
+              </svg>
+            </a>
+            <a
+              href="https://linkedin.com/in/yourusername"
+              class="contact-link"
+              aria-label="LinkedIn"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                ></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2023 Your Name. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
